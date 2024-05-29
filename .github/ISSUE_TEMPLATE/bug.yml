@@ -33,6 +33,8 @@ body:
       value: "## 详细描述"
   - type: textarea
     id: happened
+    validations:
+      required: true
     attributes:
       label: "发生了什么？"
       description: "描述你遇到的问题，并描述怎么触发的"
