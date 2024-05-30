@@ -1,0 +1,48 @@
+name: 需求建议
+description: 提出功能需求或改进建议
+title: "[Feature]"
+labels: 'Feature'
+assignees: ChishFoxcat
+body:
+  - type: markdown
+    id: enviroment
+    attributes:
+      value: "## 提供信息"
+  - type: input
+    id: version
+    validations:
+      required: true
+    attributes:
+      label: "应用版本"
+      description: "进入设置关于页面查看"
+  - type: input
+    id: device
+    validations:
+      required: true
+    attributes:
+      label: "设备信息"
+      description: "手机型号、系统版本"
+  - type: input
+    id: contacts
+    attributes:
+      label: "联系方式"
+      description: "可以联系到你的方式：QQ、微信、邮箱等"
+  - type: markdown
+    id: details
+    attributes:
+      value: "## 详细描述"
+  - type: textarea
+    id: description
+    validations:
+      required: true
+    attributes:
+      label: "描述你的需求或者改进建议"
+  - type: textarea
+    id: solution
+    attributes:
+      label: "描述你建议的实现方案"
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: "截图"
+      description: "如果可以的话，提供截图或者视频"
